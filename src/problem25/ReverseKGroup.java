@@ -2,7 +2,7 @@ package problem25;
 
 import java.util.List;
 
-public class reverseKGroup {
+public class ReverseKGroup {
     public ListNode reverseKGroup(ListNode head, int k) {
         if(k <= 1) return head;
         ListNode helperNode = new ListNode(0);
@@ -52,9 +52,9 @@ public class reverseKGroup {
         node2.next = node3;
         node3.next = node4;
         node4.next = node5;
-        new reverseKGroup().printList(node1);
-        ListNode node = new reverseKGroup().reverseKGroup(node1, 3);
-        new reverseKGroup().printList(node);
+        new ReverseKGroup().printList(node1);
+        ListNode node = new ReverseKGroup().reverseKGroup(node1, 3);
+        new ReverseKGroup().printList(node);
     }
 }
 
